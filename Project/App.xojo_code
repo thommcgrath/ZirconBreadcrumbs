@@ -1,6 +1,19 @@
 #tag Class
 Protected Class App
 Inherits Application
+	#tag Method, Flags = &h0
+		Function ImagesFolder() As FolderItem
+		  Dim ResourcesFolder As FolderItem
+		  #if TargetMacOS
+		    ResourcesFolder = App.ExecutableFile.Parent.Parent.Child("Resources")
+		  #else
+		    ResourcesFolder = GetFolderItem("Resources")
+		  #endif
+		  Return ResourcesFolder.Child("Images")
+		End Function
+	#tag EndMethod
+
+
 	#tag Constant, Name = kEditClear, Type = String, Dynamic = False, Default = \"&Delete", Scope = Public
 		#Tag Instance, Platform = Windows, Language = Default, Definition  = \"&Delete"
 		#Tag Instance, Platform = Linux, Language = Default, Definition  = \"&Delete"

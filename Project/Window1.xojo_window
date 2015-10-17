@@ -75,7 +75,7 @@ End
 		Sub Open()
 		  Me.AddCells("The Quick","Brown Fox","Jumped Over","The Lazy","Dragon")
 		  
-		  Dim Images As FolderItem = GetFolderItem("Images")
+		  Dim Images As FolderItem = App.ImagesFolder
 		  Dim HomeIcon As ArtisanKit.RetinaPicture = ArtisanKit.RetinaPicture.Open(Images.Child("Home.png"))
 		  Dim DocIcon As ArtisanKit.RetinaPicture = ArtisanKit.RetinaPicture.Open(Images.Child("Document.png"))
 		  Me.CellIcon(0) = HomeIcon

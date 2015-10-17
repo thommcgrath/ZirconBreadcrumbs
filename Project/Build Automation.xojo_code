@@ -2,18 +2,21 @@
 			Begin BuildStepList Linux
 				Begin BuildProjectStep Build
 				End
-				Begin CopyFilesBuildStep CopyImages
+				Begin CopyFilesBuildStep CopyImagesLin
 					AppliesTo = 0
-					Destination = 0
-					Subdirectory = Images
-					FolderItem = Li4ALi4ALi4AWmlyY29uS2l0AGJyZWFkY3J1bWJzAHRydW5rAEltYWdlcwBEb2N1bWVudC5wbmc=
-					FolderItem = Li4ALi4ALi4AWmlyY29uS2l0AGJyZWFkY3J1bWJzAHRydW5rAEltYWdlcwBEb2N1bWVudEAyeC5wbmc=
-					FolderItem = Li4ALi4ALi4AWmlyY29uS2l0AGJyZWFkY3J1bWJzAHRydW5rAEltYWdlcwBIb21lLnBuZw==
-					FolderItem = Li4ALi4ALi4AWmlyY29uS2l0AGJyZWFkY3J1bWJzAHRydW5rAEltYWdlcwBIb21lQDJ4LnBuZw==
+					Destination = 1
+					Subdirectory = 
+					FolderItem = Li4vSW1hZ2VzLw==
 				End
 			End
 			Begin BuildStepList Mac OS X
 				Begin BuildProjectStep Build
+				End
+				Begin CopyFilesBuildStep CopyImagesMac
+					AppliesTo = 0
+					Destination = 1
+					Subdirectory = 
+					FolderItem = Li4vSW1hZ2VzLw==
 				End
 				Begin IDEScriptBuildStep EnableRetina , AppliesTo = 0
 					Dim App As String = CurrentBuildLocation + "/""" + CurrentBuildAppName + ".app"""
@@ -23,14 +26,11 @@
 			Begin BuildStepList Windows
 				Begin BuildProjectStep Build
 				End
-				Begin CopyFilesBuildStep CopyImages
+				Begin CopyFilesBuildStep CopyImagesWin
 					AppliesTo = 0
-					Destination = 0
-					Subdirectory = Images
-					FolderItem = Li4ALi4ALi4AWmlyY29uS2l0AGJyZWFkY3J1bWJzAHRydW5rAEltYWdlcwBEb2N1bWVudC5wbmc=
-					FolderItem = Li4ALi4ALi4AWmlyY29uS2l0AGJyZWFkY3J1bWJzAHRydW5rAEltYWdlcwBEb2N1bWVudEAyeC5wbmc=
-					FolderItem = Li4ALi4ALi4AWmlyY29uS2l0AGJyZWFkY3J1bWJzAHRydW5rAEltYWdlcwBIb21lLnBuZw==
-					FolderItem = Li4ALi4ALi4AWmlyY29uS2l0AGJyZWFkY3J1bWJzAHRydW5rAEltYWdlcwBIb21lQDJ4LnBuZw==
+					Destination = 1
+					Subdirectory = 
+					FolderItem = Li4vSW1hZ2VzLw==
 				End
 			End
 #tag EndBuildAutomation
