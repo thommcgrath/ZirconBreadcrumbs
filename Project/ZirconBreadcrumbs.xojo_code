@@ -655,6 +655,9 @@ Inherits ArtisanKit.Control
 	#tag Constant, Name = BorderLeft, Type = Double, Dynamic = False, Default = \"4", Scope = Public
 	#tag EndConstant
 
+	#tag Constant, Name = BorderNone, Type = Double, Dynamic = False, Default = \"0", Scope = Public
+	#tag EndConstant
+
 	#tag Constant, Name = BorderRight, Type = Double, Dynamic = False, Default = \"8", Scope = Public
 	#tag EndConstant
 
