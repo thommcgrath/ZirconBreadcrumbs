@@ -1,0 +1,5 @@
+site_name: ZirconBreadcrumbs
+pages:
+- Home: 'index.md'
+- Version History: 'History.md'
+theme: mkdocs
