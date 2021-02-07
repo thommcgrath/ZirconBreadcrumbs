@@ -19,7 +19,7 @@
 					FolderItem = Li4vSW1hZ2VzLw==
 				End
 				Begin IDEScriptBuildStep EnableRetina , AppliesTo = 0
-					Dim App As String = CurrentBuildLocation + "/""" + CurrentBuildAppName + ".app"""
+					Var App As String = CurrentBuildLocation + "/""" + CurrentBuildAppName + ".app"""
 					Call DoShellCommand("/usr/bin/defaults write " + App + "/Contents/Info ""NSHighResolutionCapable"" YES")
 				End
 			End
